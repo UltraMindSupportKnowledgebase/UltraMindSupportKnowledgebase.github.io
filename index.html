@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UltraMind Support Knowledge Base</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <h1>UltraMind Support Knowledge Base</h1>
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Search articles...">
+        </div>
+    </header>
+
+    <main class="container">
+        <div id="kb-main-view">
+            
+            <button id="back-to-categories" class="back-button hidden">← Back to Topics</button>
+            <button id="back-to-previous" class="back-button hidden">← Back</button>
+
+            <div id="kb-categories" class="card-grid">
+                <h2>Topics</h2>
+                </div>
+
+            <div id="article-list" class="hidden">
+                <h2 id="article-list-title"></h2>
+                <ul id="article-links-container">
+                    </ul>
+            </div>
+            
+            <div id="article-detail" class="hidden">
+                <h2 id="detail-title"></h2>
+                <div id="detail-content" class="article-content"></div><br>
+                
+                <div id="next-step-container"></div> 
+                
+                <div id="detail-tags" class="tags-list"></div>
+
+            </div>
+
+            <button id="copy-markdown-btn" class="back-button hidden" title="Copy the current edited content in Markdown/JSON format.">
+    📋 Copy Edited Markdown
+</button>
+            
+            <div id="search-results" class="hidden">
+                <h2 id="search-results-title">Search Results</h2>
+                <ul id="search-links-container">
+                    </ul>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
